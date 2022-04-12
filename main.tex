@@ -1,4 +1,4 @@
-\documentclass[12pt,a4paper]{article}
+\documentclass[12pt,a4paper]{report}
 \usepackage{amsthm,amssymb,amsmath}
 \usepackage[top=50mm, bottom=50mm, left=50mm, right=50mm]{geometry}
 
@@ -7,13 +7,14 @@
 
 
 \usepackage{geometry}
+\usepackage{datetime} 
 
 %\usepackage[pagebackref=false]{hyperref}
 \usepackage{tocbibind}
 \usepackage{makeidx}
 \makeindex
 \usepackage{xepersian}
-\settextfont[Scale=1.1]{XB Niloofar}
+\settextfont[Scale=1.1]{B Nazanin}
 % Latex 2020 2021 SetDigitFont error
 \ExplSyntaxOn
 \cs_set_eq:NN
@@ -59,55 +60,54 @@
 	{\Large 
 		\textbf{
 			گزارش سمینار کارشناسی ارشد\\
-			در رشته مهندسی کامپیوتر-گرایش هوش مصنوعی
+			در رشته مهندسی کامپیوتر-گرایش هوش مصنوعی و رباتیک
 		} \\[1cm]
 	}
 
-	{\Large {\traffic 
+	{\Large { 
 	نام دانشجو:
 	}
+	\\
+	{\Large  علی نادری پاریزی }
 	\\[.5cm]
-	{\Large \nastaliq علی نادری پاریزی }
-	\\
-	{\Large\traffic  
+	{\Large  
 		استاد راهنما:
-	}}
+	}
 	\\
-	{\Large \nastaliq دکتر محسن سریانی}
+	{\Large دکتر محسن سریانی}
 	\\[.6cm]
-	آبان ماه ۱۴۰۰
+	}
+	اردیبهشت ماه ۱۴۰۱
 	\end{center}
 
 	\newpage
 		\begin{center}
-		\includegraphics[scale=1]{./images/logos/in-the-name-of-god.jpeg}
+		\includegraphics[scale=1]{./images/god.png}
 		\end{center}
 	\newpage
 	
-	\newgeometry{total={210mm,297mm}, left=40mm, right=20mm, top=20mm, bottom=20mm,}
+	\newgeometry{total={210mm,297mm}, left=20mm, right=20mm, top=20mm, bottom=20mm,}
 	
-	\section*{چکیده}
-	مسئله تشخیص ناهنجاری یکی از مهمترین مسائل مورد مطالعه و پر‌کاربرد در حوزه‌های گوناگون است.
-	در علم داده اصطلاح ناهنجاری به داده‌ای تعلق می‌گیرد از نقطه‌نظر یک معیار
-	تشابه مشخص میزان تشابه آن با سایر دادگان موجود بسیار کم باشد.
-	برای مثال اگر عکس رادیولوژی فردی که بیماری ریوی دارد را با عکس‌های رادیولوژی گرفته شده از ریه افراد سالم مقایسه کنیم متوجه تفاوت
-	این عکس با سایر عکس‌ها خواهیم شد. این عدم تشابه در دادگان، مشخص می‌کند  که فرد دچار بیماری ریوی است. درواقع پزشکان با مشاهده این عدم شباهت‌ها به
-	وجود بیماری پی می‌برند. عمل مقایسه دادگان می‌تواند به وسیله کامپیوتر نیز انجام شود که موضوع این سمینار است.\\
+	\chapter*{چکیده}
+	مسئله تشخیص ناهنجاری یکی از مهمترین مسائل مورد مطالعه و پر‌کاربرد در حوزه‌های گوناگون است. در علم داده اصطلاح ناهنجاری به داده‌ای تعلق می‌گیرد از نقطه‌نظر یک معیار تشابه مشخص، میزان تشابه آن با سایر دادگان موجود بسیار کم باشد. برای مثال اگر عکس رادیولوژی فردی که بیماری ریوی دارد را با عکس‌های رادیولوژی گرفته شده از ریه افراد سالم مقایسه کنیم متوجه تفاوت این عکس با سایر عکس‌ها خواهیم شد. این عدم تشابه در دادگان، مشخص می‌کند  که فرد دچار بیماری ریوی است. درواقع پزشکان با مشاهده این عدم شباهت‌ها به وجود بیماری پی می‌برند. عمل مقایسه دادگان می‌تواند به وسیله کامپیوتر نیز انجام شود که موضوع این سمینار است.\\
+در این سمینار قصد داریم به بررسی روش‌های موجود برای تشخیص ناهنجاری بپردازیم که از شبکه‌های عمیق استفاده می‌کنند. با توجه به اینکه کاربر‌دهای تشخیص ناهنجاری بسیار متنوع است، روش‌های بررسی شده با تمرکز بر کاربرد پردازش تصویر انتخاب شده‌اند.\\
 
-	در این سمینار قصد داریم به بررسی روش‌های موجود برای تشخیص ناهنجاری بپردازیم که از شبکه‌های عمیق استفاده می‌کنند.
-	با توجه به اینکه کاربر‌دهای تشخیص ناهنجاری بسیار متنوع است، روش‌های بررسی شده با تمرکز بر کاربرد پردازش تصویر انتخاب شده‌اند.
-
-	\textit{واژه های کلیدی:}
-	ناهنجاری،  شبکه‌های عمیق،  پردازش تصاویر.
+	\textit{
+واژه‌های کلیدی:
+	}
+	تشخیص ناهنجاری، پردازش تصویر، شبکه‌های عمیق
 
 	\newpage
 	\baselineskip=1cm
 	\tableofcontents
+	\listoffigures
+	\listoftables
 	\newpage
 	\baselineskip=.75cm
 	\pagenumbering{arabic}
-
-	\section{مقدمه}
+	%-------------------Chapter 1-----------------
+	\chapter{مقدمه}
+	\section{شرح مسئله}
 
    تشخیص ناهنجاری‌\footnote{\lr{Anomaly detection}} مسئله مهمی است که در زمینه‌های تحقیقاتی گوناگون مورد مطالعه قرار می‌گیرد و کاربرد‌های بسیار زیادی دارد. در واقع ناهنجاری به دادگانی گفته می‌شود که با توزیع دادگان معمول همخوانی ندارند. این دادگان حقایقی از داده را آشکار می‌کنند که قبلا ناشناخته بودند. به همین دلیل اطلاعات ارزشمندی از دادگان را بدست می‌دهند که می‌توان از آنها برای تصمیم‌گیری‌ استفاده کرد.\\
 
@@ -116,14 +116,15 @@
 در اکثر روش‌های ارائه شده برای تشخیص ناهنجاری اقدام به بدست آوردن یک امتیاز برای ناهنجاری\footnote{\lr{Anomaly score}} می‌کنند. این امتیاز به طریقی می‌تواند نشان‌‌دهنده احتمال تعلق این داده به دسته ناهنجاری‌ها باشد. ساده‌ترین روش برای تصمیم‌گیری در مورد یک داده قرار دادن یک مقدار آستانه برای امتیاز ناهنجاری است. اگر امتیاز داده شده به داده از مقدار آستانی بیشتر بود، داده به دسته ناهنجاری‌ها تعلق خواهد گرفت و در غیر این صورت نمی‌توان آن‌را به دسته ناهنجاری‌ها انتصاب داد.\\
 
 اکثر روش‌های مورد استفاده برای پیدا کردن ناهنجاری‌ها در دادگان از روش‌های سنتی استفاده می‌کنند که به مراتب دارای ایراداتی هستند. با توجه به اینکه امروزه استفاده از شبکه‌های عمیق در حل مسائل رونق یافته،‌می‌توان برای حل مسئله یافتن ناهنجاری‌‌ها نیز مورد استفاده قرار گیرند. در این سمینار سعی شده روش‌های استفاده شده برای تشخیص ناهنجاری که از شبکه‌های عمیق استفاده میکنند را مورد بررسی قرار دهیم و ضمن معرفی انواع روش‌ها یک دسته بندی متناسب با کاربرد برای این روش‌ها نیز ارائه دهیم. با توجه به گستردگی کاربرد این حوزه، بیشتر روش‌های مورد استفاده در پردازش تصویر و بینایی کامپیوتر مورد بحث قرار خواهند گرفت.
-	\subsection{معرفی حوزه سمینار}
+	\section{معرفی حوزه سمینار}
 در این سمینار تلاش شده روش‌های مبتنی بر یادگیری عمیق در حوزه تشخیص ناهنجاری را برسی کنیم. از آنجا که این حوزه در رشته‌های بسیار زیادی استفاده دارد و مقالات بسیار متعددی بسته به کاربرد در حوزه‌های گوناگون به چاپ رسیده است، سعی کردیم حوزه سمینار را محدود کرده و ضمن معرفی انواع کاربرد‌های مسئله تشخیص ناهنجاری به بررسی روش‌هایی بپردازیم که در رابطه با کاربرد پردازش تصویر و بینایی کامپیوتر هستند. با توجه به تعدد مقالات در سال‌های اخیر و وجود مقالات جامع در این حوزه سعی کردیم بیشتر مقالات جدید که در سنوات ۲۰۱۹ به بعد منتشر شده اند را بررسی کرده و برای باقی روش‌ها به ارجاع دهی به مقالات دیگر اکتفا کنیم.\\
 
 در این سمینار ابتدا یک دسته بندی کلی از روش‌های مختلف شبکه‌های عمیق ارائه کرده و سپس به بررسی روش‌های جدید که در این دسته‌بندی می‌گنجند می‌پردازیم.
 در بررسی روش‌ها به کاربرد روش و مسائل قابل حل،‌پیچیدگی، قابلیت پیاده سازی صنعتی،‌نحوه آموزش و دادگان مورد نیاز خواهیم پرداخت.
-	\subsection{ساختار گزارش}
+	\section{ساختار گزارش}
 در فصل اوّل این سمینار به معرفی حوزه سمینار و تعریف مسئله پرداخته شد و در فصل دوّم به تعریف مفاهیم و اصطلاحات استفاده شده در این حوزه خواهیم پرداخت. فصل سوّم نیز در رابطه با بررسی کار‌های مرتبط با این سمینار و معرفی و بررسی جزئی از روش‌ها و مقالات موجود چاپ شده در سال‌های اخیر خواهد پرداخت. در ابتدای فصل سوّم پس از معرفی کار‌های مرتبط یک دسته‌بندی از روش‌های موجود ارائه می‌گردد و در ادامه، ترتیب معرفی و بررسی روش‌های موجود بر طبق این دسته‌بندی خواهد بود. در نهایت یک جمع بندی و نتیجه گیری کلی از روش‌های موجود در هر دسته انجام می‌دهیم و پیشنهاداتمان را در رابطه با استفاده از این روش‌ها بسته به کاربرد مورد نظر ارائه می‌کنیم. در فصل آخر گزارش پیشنهادات خود را درباره کار‌های آینده این حوزه ارائه کرده و در نهایت پیشنهاد انجام پروژه کارشناسی ارشد را که در راستای همین سمینار است معرفی می‌کنیم.
-	\section{تعاریف و مفاهیم مبنایی}
+	%------------Chapter 2--------------
+	\chapter{تعاریف و مفاهیم مبنایی}
 		\definition{یادگیری ماشین\footnote{\lr{Machine Learning}}}
 		یک حوزه مطالعاتی است که در آن تمرکز بر تولید روش‌ها و الگوریتم‌هایی است که باعث شوند ماشین چیزی را یاد بگیرد.
 		\definition{تشخیص ناهنجاری\footnote{\lr{Anomaly Detection}}}
@@ -144,17 +145,17 @@
 به مجموعه دادگان در دسترس برای انجام فرآیند یادگیری گفته میشود.
 		\definition{یادگیری تقویتی\footnote{\lr{Reinforcement learning}}}
 نوعی عمل یادگیری است که در آن عامل(ماشین) با محیط خود در ارتباط است و با استفاده از پاسخ‌هایی که از محیط دریافت می‌کند اقدام به یادگیری یک عمل می‌کند.
-		
-	\section{مروری بر کار‌های مرتبط}
+	%--------------Chapter 3--------------
+	\chapter{مروری بر کار‌های مرتبط}
 	\subsection{مقدمه}
 	\subsection{عنوان بخش}
 	\subsubsection{توضیح بخش}
 	\subsection{مقایسه و نتیجه گیری}
-	\section{نتیجه گیری و کار‌های آینده}
-	\subsection{مقدمه}
-	\subsection{نتیجه گیری}
-	\subsection{مسائل باز و کارهای قابل انجام}
-	\subsection{موضوع پیشنهادی برای پایان نامه}
+	%-------------- Chapter 4--------------
+	\chapter{نتیجه گیری و کار‌های آینده}
+	\section{نتیجه گیری}
+	\section{مسائل باز و کارهای قابل انجام}
+	\section{موضوع پیشنهادی برای پایان نامه}
 	\newpage
 	
 	\small
@@ -169,75 +170,6 @@
 
 \bibitem{R. Chalapathy}
 R. Chalapathy, C. Chawla, {\em Deep learning for anomalu detection: a survay},  arXive, 2019.
-
-\bibitem{aliprantis}
-C.D. Aliprantis and O. Burkinshaw,   {\em Principles of Real Analysis}.  Academic Press.  1998,  xii+415 pp.
-
-\bibitem{Alvarez1}
-M. Alvarez-Manilla, {\em Measure theoretic results for continuous valuations on partially ordered
-spaces}, Dissertation, Imperial College, London, 2000.
-
-\bibitem{Alvarez2}
-M. Alvarez-Manilla, {\em Extension of valuations on locally compact sober spaces}, Topology and its
-Applications, 124, 2002 397-433.
-
-\bibitem{Billingsley}
-P. Billingsley, {\em Probability and Measure}, 2nd Edition, John Wiley \& Sons, 1986.
-
-\bibitem{D.A. Edwards}
-D.A. Edwards, {\em On the existence of probability measures with given marginals}, Annales de
-l’Institut Fourier, Grenoble 28 1978, 53–78.
-
-\bibitem{G. Gierz}
-G. Gierz, K.H. Hofmann, K. Keimel, J.D. Lawson, M. Mislove, and D.S. Scott. {\em Continuous
-Lattices and Domains}, Encyclopedia of Mathematics and its Applications 93, Cambridge
-University Press, 2003, xxxvi+591pp.
-
-\bibitem{Halmos}
-P. Halmos, {\em Measure Theory}, D. Van-Nostrand Company, 1950.
-
-\bibitem{Jones}
-C. Jones,  {\em Probabilistic Non-Determinism}. PhD thesis, University of Edinburgh, Edinburgh,
-1990. Also published as Technical Report No. CST-63-90.
-
-\bibitem{Jung}
-A. Jung,  {\em Cartesian Closed Categories of Domains}, volume 66 of CWI Tracts. Centrum voor
-Wiskunde en Informatica, Amsterdam, 1989, 107 pp.
-
-\bibitem{Kegelmann}
-A. Jung, M. Kegelmann, and M.A. Moshier,  {\em Multi lingual sequent calculus and coherent spaces}.
-Electronic Notes in Theoretical Computer Science, 6, 1997.
-
-\bibitem{main}
-K. Keimel, {\em The Probabilistic Powerdomain for Stably Compact Spaces via Compact Ordered Spaces}, Electronic Notes in Theoretical Computer Science 87, 2004 225–238.
-
-\bibitem{Jung and Tix}
-A. Jung and R. Tix,  {\em The troublesome probabilistic powerdomain}. Electronic Notes in
-Theoretical Computer Science, 13, 1998.
-
-\bibitem{Konig}
-H. K¨onig,  {\em Measure and Integration}, Springer–Verlag, 1997, xxi+260 pp.
-
-\bibitem{lawson}
-J.D. Lawson, {\em Valuations on continuous lattices}. In: Math. Arbeitspapiere 27, Univ. Bremen,
-1982, Ed. R.-E. Hoffmann, 204–225.
-
-\bibitem{lawson 2}
-J.D. Lawson, {\em Domains, Integration, and Positive Analysis}. Mathematical Structures in
-Computer Science, 14, 2004, 815-832.
-
-\bibitem{Nachbin}
-L. Nachbin, {\em Topology and Order}. Van-Nostrand, Princeton, N.J., 1965.
-
-\bibitem{rudin} 
-W. Rudin,  {\em Real and Complex Analysis}.  Mc Graw-Hill Book Comp. 1966, xi+412 pp.
-
-\bibitem{functional}
-W. Rudin,  {\em Functional Analysis},  2nd Edition, Mc Graw-Hill Book Comp.  1991,  xv+424.
-
-\bibitem{Tix} 
-R. Tix,  {\em Stetige Bewertungen auf topologischen R¨aumen}. Diplomarbeit, Technische Universit¨at
-Darmstadt, June 1995, 51 pp.
 
 \end{LTRitems}
 
@@ -273,18 +205,16 @@ Computer engineering - Artificial intelligence and robotics
 		} \\[1cm]
 	}
 
-	{\Large  
-	student:
+	{\Large { Student name:}
+	\\
+	{\Large  Ali Naderi Parizi}
 	\\[.5cm]
-	{\Large  Ali Naderi Parizi }
+	{\Large  Professor:}
 	\\
-	{\Large  
-		Professor:
-	}}
-	\\
-	{\Large  Dr. Mohsen Soryani}
+	{\Large Dr.  Mohsen Soryani}
 	\\[.6cm]
-\date{\today}
+	}
+April 2022
 	\end{center}
 
 \end{latin}
