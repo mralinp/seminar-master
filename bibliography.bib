@@ -1,12 +1,129 @@
 %% This BibTeX bibliography file was created using BibDesk.
 %% https://bibdesk.sourceforge.io/
 
-%% Created for Ali Naderi Parizi at 1401-01-31 11:18:13 +0430 
+%% Created for Ali Naderi Parizi at 1401-02-05 11:57:34 +0430 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
 
 
+
+@inproceedings{10.1145/342009.335388,
+	abstract = {For many KDD applications, such as detecting criminal activities in E-commerce, finding the rare instances or the outliers, can be more interesting than finding the common patterns. Existing work in outlier detection regards being an outlier as a binary property. In this paper, we contend that for many scenarios, it is more meaningful to assign to each object a degree of being an outlier. This degree is called the local outlier factor (LOF) of an object. It is local in that the degree depends on how isolated the object is with respect to the surrounding neighborhood. We give a detailed formal analysis showing that LOF enjoys many desirable properties. Using real-world datasets, we demonstrate that LOF can be used to find outliers which appear to be meaningful, but can otherwise not be identified with existing approaches. Finally, a careful performance evaluation of our algorithm confirms we show that our approach of finding local outliers can be practical.},
+	address = {New York, NY, USA},
+	author = {Breunig, Markus M. and Kriegel, Hans-Peter and Ng, Raymond T. and Sander, J\"{o}rg},
+	booktitle = {Proceedings of the 2000 ACM SIGMOD International Conference on Management of Data},
+	date-added = {1401-02-05 11:57:18 +0430},
+	date-modified = {1401-02-05 11:57:18 +0430},
+	doi = {10.1145/342009.335388},
+	isbn = {1581132174},
+	keywords = {database mining, outlier detection},
+	location = {Dallas, Texas, USA},
+	numpages = {12},
+	pages = {93--104},
+	publisher = {Association for Computing Machinery},
+	series = {SIGMOD '00},
+	title = {LOF: Identifying Density-Based Local Outliers},
+	url = {https://doi.org/10.1145/342009.335388},
+	year = {2000},
+	bdsk-url-1 = {https://doi.org/10.1145/342009.335388}}
+
+@inproceedings{pmlr-v80-ruff18a,
+	abstract = {Despite the great advances made by deep learning in many machine learning problems, there is a relative dearth of deep learning approaches for anomaly detection. Those approaches which do exist involve networks trained to perform a task other than anomaly detection, namely generative models or compression, which are in turn adapted for use in anomaly detection; they are not trained on an anomaly detection based objective. In this paper we introduce a new anomaly detection method---Deep Support Vector Data Description---, which is trained on an anomaly detection based objective. The adaptation to the deep regime necessitates that our neural network and training procedure satisfy certain properties, which we demonstrate theoretically. We show the effectiveness of our method on MNIST and CIFAR-10 image benchmark datasets as well as on the detection of adversarial examples of GTSRB stop signs.},
+	author = {Ruff, Lukas and Vandermeulen, Robert and Goernitz, Nico and Deecke, Lucas and Siddiqui, Shoaib Ahmed and Binder, Alexander and M{\"u}ller, Emmanuel and Kloft, Marius},
+	booktitle = {Proceedings of the 35th International Conference on Machine Learning},
+	date-added = {1401-02-05 11:17:11 +0430},
+	date-modified = {1401-02-05 11:17:11 +0430},
+	editor = {Dy, Jennifer and Krause, Andreas},
+	month = {10--15 Jul},
+	pages = {4393--4402},
+	pdf = {http://proceedings.mlr.press/v80/ruff18a/ruff18a.pdf},
+	publisher = {PMLR},
+	series = {Proceedings of Machine Learning Research},
+	title = {Deep One-Class Classification},
+	url = {https://proceedings.mlr.press/v80/ruff18a.html},
+	volume = {80},
+	year = {2018},
+	bdsk-url-1 = {https://proceedings.mlr.press/v80/ruff18a.html}}
+
+@inproceedings{10.5555/3009657.3009740,
+	abstract = {Suppose you are given some dataset drawn from an underlying probability distribution P and you want to estimate a "simple" subset S of input space such that the probability that a test point drawn from P lies outside of S equals some a priori specified ν between 0 and 1.We propose a method to approach this problem by trying to estimate a function f which is positive on S and negative on the complement. The functional form of f is given by a kernel expansion in terms of a potentially small subset of the training data; it is regularized by controlling the length of the weight vector in an associated feature space. We provide a theoretical analysis of the statistical performance of our algorithm.The algorithm is a natural extension of the support vector algorithm to the case of unlabelled data.},
+	address = {Cambridge, MA, USA},
+	author = {Sch\"{o}lkopf, Bernhard and Williamson, Robert and Smola, Alex and Shawe-Taylor, John and Platt, John},
+	booktitle = {Proceedings of the 12th International Conference on Neural Information Processing Systems},
+	date-added = {1401-02-05 10:41:11 +0430},
+	date-modified = {1401-02-05 10:41:53 +0430},
+	location = {Denver, CO},
+	numpages = {7},
+	pages = {582--588},
+	publisher = {MIT Press},
+	series = {NIPS'99},
+	title = {Support Vector Method for Novelty Detection},
+	year = {1999}}
+
+@article{Grubbs1969ProceduresFD,
+	author = {Frank E. Grubbs},
+	date-added = {1401-02-02 20:43:01 +0430},
+	date-modified = {1401-02-02 20:43:01 +0430},
+	journal = {Technometrics},
+	pages = {1-21},
+	title = {Procedures for Detecting Outlying Observations in Samples},
+	volume = {11},
+	year = {1969}}
+
+@article{Y.Bao,
+	author = {Bao, Yuequan and Tang, Zhiyi and Li, Hui and Zhang, Yufeng},
+	date-added = {1401-02-02 15:45:48 +0430},
+	date-modified = {1401-02-02 15:47:14 +0430},
+	doi = {10.1177/1475921718757405},
+	journal = {Structural Health Monitoring: An International Journal},
+	month = {02},
+	pages = {147592171875740},
+	title = {Computer vision and deep learning--based data anomaly detection method for structural health monitoring},
+	volume = {18},
+	year = {2018},
+	bdsk-url-1 = {https://doi.org/10.1177/1475921718757405}}
+
+@article{V.Chandola,
+	abstract = {Anomaly detection is an important problem that has been researched within diverse research areas and application domains. Many anomaly detection techniques have been specifically developed for certain application domains, while others are more generic. This survey tries to provide a structured and comprehensive overview of the research on anomaly detection. We have grouped existing techniques into different categories based on the underlying approach adopted by each technique. For each category we have identified key assumptions, which are used by the techniques to differentiate between normal and anomalous behavior. When applying a given technique to a particular domain, these assumptions can be used as guidelines to assess the effectiveness of the technique in that domain. For each category, we provide a basic anomaly detection technique, and then show how the different existing techniques in that category are variants of the basic technique. This template provides an easier and more succinct understanding of the techniques belonging to each category. Further, for each category, we identify the advantages and disadvantages of the techniques in that category. We also provide a discussion on the computational complexity of the techniques since it is an important issue in real application domains. We hope that this survey will provide a better understanding of the different directions in which research has been done on this topic, and how techniques developed in one area can be applied in domains for which they were not intended to begin with.},
+	address = {New York, NY, USA},
+	articleno = {15},
+	author = {Chandola, Varun and Banerjee, Arindam and Kumar, Vipin},
+	date-added = {1401-02-02 15:44:13 +0430},
+	date-modified = {1401-02-02 15:47:37 +0430},
+	doi = {10.1145/1541880.1541882},
+	issn = {0360-0300},
+	issue_date = {July 2009},
+	journal = {ACM Comput. Surv.},
+	keywords = {outlier detection, Anomaly detection},
+	month = {jul},
+	number = {3},
+	numpages = {58},
+	publisher = {Association for Computing Machinery},
+	title = {Anomaly Detection: A Survey},
+	url = {https://doi.org/10.1145/1541880.1541882},
+	volume = {41},
+	year = {2009},
+	bdsk-file-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxBGLi4vLi4vRHJvcGJveC9NYXN0ZXIvc2VtZXN0ZXJzL3NlbWluYXIvcGFwYWVycy9zdXJ2YXkvY2hhbmRvbGEyMDA5LnBkZk8RAYYAAAAAAYYAAgAABk1BQyBIRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABCRAAB/////xBjaGFuZG9sYTIwMDkucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////AAAAAAAAAAAAAAAAAAIABwAACiBjdQAAAAAAAAAAAAAAAAAGc3VydmF5AAIATC86VXNlcnM6YWxpOkRyb3Bib3g6TWFzdGVyOnNlbWVzdGVyczpzZW1pbmFyOnBhcGFlcnM6c3VydmF5OmNoYW5kb2xhMjAwOS5wZGYADgAiABAAYwBoAGEAbgBkAG8AbABhADIAMAAwADkALgBwAGQAZgAPAA4ABgBNAEEAQwAgAEgARAASAEpVc2Vycy9hbGkvRHJvcGJveC9NYXN0ZXIvc2VtZXN0ZXJzL3NlbWluYXIvcGFwYWVycy9zdXJ2YXkvY2hhbmRvbGEyMDA5LnBkZgATAAEvAAAVAAIACv//AAAACAANABoAJABtAAAAAAAAAgEAAAAAAAAABQAAAAAAAAAAAAAAAAAAAfc=},
+	bdsk-url-1 = {https://doi.org/10.1145/1541880.1541882}}
+
+@article{G.Chalapathy,
+	author = {Chalapathy, Raghavendra and Chawla, Sanjay},
+	date-added = {1401-02-02 15:41:52 +0430},
+	date-modified = {1401-02-02 15:42:06 +0430},
+	month = {01},
+	title = {Deep Learning for Anomaly Detection: A Survey},
+	year = {2019},
+	bdsk-file-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxBxLi4vLi4vRHJvcGJveC9NYXN0ZXIvc2VtZXN0ZXJzL3NlbWluYXIvcGFwYWVycy9zdXJ2YXkvZGVlcC1sZWFybmluZy1mb3ItYW5vbWFseS1kZXRlY3Rpb24tYS1zdXJ2ZXkvMTkwMS4wMzQwNy5wZGZPEQH0AAAAAAH0AAIAAAZNQUMgSEQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQkQAAf////8OMTkwMS4wMzQwNy5wZGYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////wAAAAAAAAAAAAAAAAACAAgAAAogY3UAAAAAAAAAAAAAAAAAH2RlZXAtbGVhcm5pbmctZm9yLWFub21hbHktZGV0I0YAAAIAdy86VXNlcnM6YWxpOkRyb3Bib3g6TWFzdGVyOnNlbWVzdGVyczpzZW1pbmFyOnBhcGFlcnM6c3VydmF5OmRlZXAtbGVhcm5pbmctZm9yLWFub21hbHktZGV0ZWN0aW9uLWEtc3VydmV5OjE5MDEuMDM0MDcucGRmAAAOAB4ADgAxADkAMAAxAC4AMAAzADQAMAA3AC4AcABkAGYADwAOAAYATQBBAEMAIABIAEQAEgB1VXNlcnMvYWxpL0Ryb3Bib3gvTWFzdGVyL3NlbWVzdGVycy9zZW1pbmFyL3BhcGFlcnMvc3VydmF5L2RlZXAtbGVhcm5pbmctZm9yLWFub21hbHktZGV0ZWN0aW9uLWEtc3VydmV5LzE5MDEuMDM0MDcucGRmAAATAAEvAAAVAAIACv//AAAACAANABoAJACYAAAAAAAAAgEAAAAAAAAABQAAAAAAAAAAAAAAAAAAApA=}}
+
+@article{G.Pang,
+	author = {Pang, Guansong and Shen, Chunhua and Cao, Longbing and Hengel, Anton},
+	date-added = {1401-02-02 15:39:14 +0430},
+	date-modified = {1401-02-02 15:40:18 +0430},
+	month = {07},
+	title = {Deep Learning for Anomaly Detection: A Review},
+	year = {2020},
+	bdsk-file-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxBxLi4vLi4vRHJvcGJveC9NYXN0ZXIvc2VtZXN0ZXJzL3NlbWluYXIvcGFwYWVycy9zdXJ2YXkvZGVlcC1sZWFybmluZy1mb3ItYW5vbWFseS1kZXRlY3Rpb24tYS1yZXZpZXcvMjAwNy4wMjUwMC5wZGZPEQH0AAAAAAH0AAIAAAZNQUMgSEQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQkQAAf////8OMjAwNy4wMjUwMC5wZGYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////wAAAAAAAAAAAAAAAAACAAgAAAogY3UAAAAAAAAAAAAAAAAAH2RlZXAtbGVhcm5pbmctZm9yLWFub21hbHktZGUjMTEAAAIAdy86VXNlcnM6YWxpOkRyb3Bib3g6TWFzdGVyOnNlbWVzdGVyczpzZW1pbmFyOnBhcGFlcnM6c3VydmF5OmRlZXAtbGVhcm5pbmctZm9yLWFub21hbHktZGV0ZWN0aW9uLWEtcmV2aWV3OjIwMDcuMDI1MDAucGRmAAAOAB4ADgAyADAAMAA3AC4AMAAyADUAMAAwAC4AcABkAGYADwAOAAYATQBBAEMAIABIAEQAEgB1VXNlcnMvYWxpL0Ryb3Bib3gvTWFzdGVyL3NlbWVzdGVycy9zZW1pbmFyL3BhcGFlcnMvc3VydmF5L2RlZXAtbGVhcm5pbmctZm9yLWFub21hbHktZGV0ZWN0aW9uLWEtcmV2aWV3LzIwMDcuMDI1MDAucGRmAAATAAEvAAAVAAIACv//AAAACAANABoAJACYAAAAAAAAAgEAAAAAAAAABQAAAAAAAAAAAAAAAAAAApA=}}
 
 @article{T.Ehret,
 	abstract = {We review the broad variety of methods that have been proposed for anomaly detection in images. Most methods found in the literature have in mind a particular application. Yet we focus on a classification of the methods based on the structural assumption they make on the ``normal''image, assumed to obey a ``background model.''Five different structural assumptions emerge for the background model. Our analysis leads us to reformulate the best representative algorithms in each class by attaching to them an a-contrario detection that controls the number of false positives and thus deriving a uniform detection scheme for all. By combining the most general structural assumptions expressing the background's normality with the proposed generic statistical detection tool, we end up proposing several generic algorithms that seem to generalize or reconcile most methods. We compare the six best representatives of our proposed classes of algorithms on anomalous images taken from classic papers on the subject, and on a synthetic database. Our conclusion hints that it is possible to perform automatic anomaly detection on a single image.},

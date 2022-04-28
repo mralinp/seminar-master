@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d (TeX Live 2021)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: plain-fa.bst
+Database file #1: bibliography.bib
+-- plain-fa.bst version 0.9 (2015/05/09) 
+-- This is a BibTeX style for XePersian: http://www.parsilatex.com
+
+Done.
+You've used 6 entries,
+            2546 wiz_defined-function locations,
+            676 strings with 6658 characters,
+and the built_in function-call counts, 3026 in all, are:
+= -- 276
+> -- 150
+< -- 4
++ -- 58
+- -- 52
+* -- 228
+:= -- 447
+add.period$ -- 21
+call.type$ -- 6
+change.case$ -- 43
+chr.to.int$ -- 0
+cite$ -- 6
+duplicate$ -- 102
+empty$ -- 191
+format.name$ -- 52
+if$ -- 720
+int.to.chr$ -- 0
+int.to.str$ -- 6
+missing$ -- 71
+newline$ -- 60
+num.names$ -- 14
+pop$ -- 38
+preamble$ -- 1
+purify$ -- 37
+quote$ -- 0
+skip$ -- 80
+stack$ -- 0
+substring$ -- 166
+swap$ -- 36
+text.length$ -- 4
+text.prefix$ -- 0
+top$ -- 4
+type$ -- 24
+warning$ -- 0
+while$ -- 25
+width$ -- 7
+write$ -- 97
