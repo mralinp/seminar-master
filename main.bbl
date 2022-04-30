@@ -5,12 +5,34 @@
 
 \begin{LTRbibitems}
 \resetlatinfont
+\bibitem{BHUVANESHWARI2021131}
+Bhuvaneshwari, M., Kanaga, E. Grace~Mary, Anitha, J., Raimond, Kumudha, and
+  George, S.~Thomas.
+\newblock Chapter 7 - a comprehensive review on deep learning techniques for a
+  bci-based communication system.
+\newblock In N, Pradeep, Kautish, Sandeep, and Peng, Sheng-Lung,  editors, {\em
+  Demystifying Big Data, Machine Learning, and Deep Learning for Healthcare
+  Analytics}, pages 131--157. Academic Press, 2021.
+
+\end{LTRbibitems}
+
+\begin{LTRbibitems}
+\resetlatinfont
 \bibitem{10.1145/342009.335388}
 Breunig, Markus~M., Kriegel, Hans-Peter, Ng, Raymond~T., and Sander, J\"{o}rg.
 \newblock Lof: Identifying density-based local outliers.
 \newblock In {\em Proceedings of the 2000 ACM SIGMOD International Conference
   on Management of Data}, SIGMOD '00, pages 93--104, New York, NY, USA, 2000.
   Association for Computing Machinery.
+
+\end{LTRbibitems}
+
+\begin{LTRbibitems}
+\resetlatinfont
+\bibitem{G.Chalapathy}
+Chalapathy, Raghavendra and Chawla, Sanjay.
+\newblock Deep learning for anomaly detection: A survey.
+\newblock 01 2019.
 
 \end{LTRbibitems}
 
