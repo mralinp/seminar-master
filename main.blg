@@ -1,52 +1,53 @@
-This is BibTeX, Version 0.99d (TeX Live 2021)
+This is BibTeX, Version 0.99d (TeX Live 2022)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 The style file: plain-fa.bst
 Database file #1: bibliography.bib
+Warning--I didn't find a database entry for "vae"
 -- plain-fa.bst version 0.9 (2015/05/09) 
 -- This is a BibTeX style for XePersian: http://www.parsilatex.com
 Warning--empty journal in G.Chalapathy
 
 Done.
-You've used 8 entries,
+You've used 11 entries,
             2546 wiz_defined-function locations,
-            690 strings with 7163 characters,
-and the built_in function-call counts, 3952 in all, are:
-= -- 354
-> -- 202
-< -- 5
-+ -- 77
-- -- 69
-* -- 288
-:= -- 586
-add.period$ -- 28
-call.type$ -- 8
-change.case$ -- 56
+            715 strings with 8073 characters,
+and the built_in function-call counts, 5630 in all, are:
+= -- 509
+> -- 289
+< -- 7
++ -- 109
+- -- 98
+* -- 401
+:= -- 826
+add.period$ -- 39
+call.type$ -- 11
+change.case$ -- 76
 chr.to.int$ -- 0
-cite$ -- 9
-duplicate$ -- 136
-empty$ -- 250
-format.name$ -- 69
-if$ -- 946
+cite$ -- 12
+duplicate$ -- 203
+empty$ -- 355
+format.name$ -- 98
+if$ -- 1358
 int.to.chr$ -- 0
-int.to.str$ -- 8
-missing$ -- 95
-newline$ -- 78
-num.names$ -- 20
-pop$ -- 56
+int.to.str$ -- 11
+missing$ -- 131
+newline$ -- 105
+num.names$ -- 28
+pop$ -- 77
 preamble$ -- 1
-purify$ -- 48
+purify$ -- 65
 quote$ -- 0
-skip$ -- 106
+skip$ -- 164
 stack$ -- 0
-substring$ -- 204
-swap$ -- 46
-text.length$ -- 5
+substring$ -- 296
+swap$ -- 77
+text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 4
-type$ -- 32
+type$ -- 44
 warning$ -- 1
-while$ -- 32
-width$ -- 9
-write$ -- 124
-(There was 1 warning)
+while$ -- 44
+width$ -- 13
+write$ -- 171
+(There were 2 warnings)
