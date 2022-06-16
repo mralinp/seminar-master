@@ -5,3 +5,8 @@ build
 *.out
 *.gz
 *.toc
+*.DS_Store
+*.bbl
+*.blg
+*.lof
+*.lot
