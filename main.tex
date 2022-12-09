@@ -48,16 +48,9 @@
 \defpersianfont\traffic[Scale=1]{B Traffic}
 
 
-\theoremstyle{definition}
-\newtheorem{definition}{تعریف}[section]
-\newtheorem{theorem}[definition]{قضیه}
-\newtheorem{lemma}[definition]{لم}
-\newtheorem{proposition}[definition]{گزاره}
-\newtheorem{corollary}[definition]{نتیجه}
-\newtheorem{remark}[definition]{ملاحظه}
-\theoremstyle{definition}
-\newtheorem{example}[definition]{مثال}
-
+\renewcommand\listfigurename{فهرست شکل‌ها}
+\renewcommand{\listtablename}{فهرست جدول‌ها}
+\renewcommand{\bibname}{مراجع}
 
 \begin{document}
 	\newgeometry{total={210mm,297mm}, left=40mm, right=40mm, top=20mm, bottom=20mm,}
@@ -750,7 +743,7 @@ d(x) = log(1- D(X))
 %دستوری برای ظاهر شدن کلمه«مراجع» در فهرست مطالب
 \addcontentsline{toc}{section}{مراجع}
 %ایجاد «مراجع»
-\bibliographystyle{plain-fa}
+\bibliographystyle{unsrt-fa}
 %\bibliographystyle{IEEEtran}
 \bibliography{bibliography.bib}
 
